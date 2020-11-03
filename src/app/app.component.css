@@ -1,0 +1,30 @@
+.app-btn_custom{
+    background-color: #800080;
+    color: #fff;
+    padding: 17px 65px;
+    border-radius: 40px;
+    font-size: 24px;
+    z-index: 91;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.app-btn_custom:hover{
+    border-radius: 10px;
+
+}
+.app-fixed_button{
+    position: fixed;
+    left: 65px;
+    bottom: 30px;
+    z-index: 5;
+}
+
+svg {
+    fill: currentColor;
+    height: auto;
+    max-width: 66vmin;
+    transform-origin: center;
+    width: 66%;
+    position: fixed;
+  }
