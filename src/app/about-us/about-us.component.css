@@ -1,0 +1,205 @@
+.app-about__page__hero.about__inner{
+    min-height: 900px;
+}
+.about__inner {
+    height: 100vh;
+    min-height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.app-about__page__hero:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    opacity: 0.8;
+    background: #FFF;
+}
+.about__inner .app-about__text {
+    text-align: center;
+}
+.app-about__page__hero .app-about__inner__text{
+    margin: 0;
+}
+.about__inner h1{
+    font-size: 6rem;
+    margin: 0 0 15px;
+    /* font-weight: 900; */
+    color: #5c4187;
+}
+
+.app-about__page__hero .app-about__inner__text h1 span {
+    position: relative;
+}
+.about__inner h2{
+    font-weight: 300;
+    color: #777777;
+    font-size: 48px;
+    margin: 0;
+}
+
+.app-about__page__hero .app-about__text {
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+.app-hero-arrow span{
+    width: 43px;
+    height: 24px;
+    background: url(../../assets/images/down@2x_gray.png) no-repeat center;
+    background-size: 100%;
+    position: absolute;
+    bottom: 75px;
+    left: 50%;
+    margin-left: -21.5px;
+    z-index: 5;
+    cursor: pointer;
+  
+-webkit-animation: ca3_fade_move_down 2s ease-in-out infinite;
+-moz-animation:    ca3_fade_move_down 2s ease-in-out infinite;
+animation:         ca3_fade_move_down 2s ease-in-out infinite;
+}
+/*animated scroll arrow animation*/
+@-webkit-keyframes ca3_fade_move_down {
+    0%   { -webkit-transform:translate(0,-20px); opacity: 0;  }
+    50%  { opacity: 1;  }
+    100% { -webkit-transform:translate(0,20px); opacity: 0; }
+  }
+  @-moz-keyframes ca3_fade_move_down {
+    0%   { -moz-transform:translate(0,-20px); opacity: 0;  }
+    50%  { opacity: 1;  }
+    100% { -moz-transform:translate(0,20px); opacity: 0; }
+  }
+  @keyframes ca3_fade_move_down {
+    0%   { transform:translate(0,-20px); opacity: 0;  }
+    50%  { opacity: 1;  }
+    100% { transform:translate(0,20px); opacity: 0; }
+  }
+.app-about-page-inner__bottom{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+}
+.app-about-page-inner__bottom .container
+
+{
+    position: relative;
+}
+
+.app-about-us-section .app-about-text h3 {
+    font-size: 60px;
+    font-weight: 900;
+    margin: 0 0 30px;
+}
+
+.app-about-us-section .app-about-text h3 span {
+    font-size: 100px;
+    color: #dfdfdf;
+    display: block;
+    margin: -20px 0 0 0px;
+    position: relative;
+    z-index: -1;
+}
+.app-about-shape{
+    width: 609px;
+    height: 613px;
+    background: url(../../assets/images/about__shape.png) no-repeat center;
+    background-size: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: -2;
+    left: 25%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.app-section{
+    margin: 0 0 140px;
+    z-index: 3;
+    position: relative;
+}
+
+.app-title-about-management{
+    padding: 45px 45px 65px;
+}
+.app-section-title>h2{
+    z-index: 1;
+    font-weight: 900;
+    margin: 0 0 80px;
+    display: inline-block;
+    color: #5c4187;
+    position: relative;
+    width: 100%;
+}
+.app-section-title{
+    padding: 55px 25px 15px;
+}
+.app-section-title h2 strong {
+    display: block;
+    font-weight: 900;
+}
+
+.app-section-title h2 strong{
+    position: absolute;
+    left: 68%;
+    font-size: 2em;
+    top: -20px;
+}
+.app-section-title h2 span {
+    font-size: 185px;
+    color: #e6e6e6;
+    position: absolute;
+    right: 5%;
+    top: 20px;
+    z-index: -1;
+    white-space: nowrap;
+}
+.app-section-title>h2::before{
+    content: '';
+    width: 310px;
+    height: 310px;
+    background: #59c6dd;
+    position: absolute;
+    right: -115px;
+    top: -60px;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+
+@media (min-width: 1900px){
+    .app-section-title h2 strong{
+        left: 68% !important;
+    }
+  
+   }
+
+   @media (min-width: 1600px){
+    .app-wraper .container {
+        max-width: 1522px;
+    }
+
+    .app-section-title h2 strong{
+        left: 63%;
+    }
+   .app-section{
+       padding: 100px 0px;
+   }
+   
+   }

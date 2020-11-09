@@ -1,20 +1,24 @@
 
    <header>       
     <nav>
-       <div class="menu-icon">
-          <i class="fa fa-bars fa-2x"></i>
+       <div class="container">
+            <div class="menu-icon">
+               <fa-icon [icon]="faBars"></fa-icon>
+             </div>
+             <div class="logo">
+                <a routerLink="/home"><img src="../../assets/images/smarTrans_Logo.png" alt="smarTrans_Logo" title="smarTrans_Logo" srcset="../../assets/images/smarTrans_Logo.png"></a>
+             </div>
+             <div class="menu">
+                <ul>
+                   <li class="item"><a routerLink="/about-us">About Us</a></li>
+                   <li class="item"><a routerLink="/features">Features</a></li>
+                   <li class="item"><a href="#">Let's Talk</a></li>
+                   <li><a href="#" class="btn-custom">Request A Demo</a></li>
+      
+                </ul>
+             </div>
+       
        </div>
-       <div class="logo">
-          LOGO
-       </div>
-       <div class="menu">
-          <ul>
-             <li><a routerLink="/home">About Us</a></li>
-             <li><a href="#">Features</a></li>
-             <li><a href="#">Let's Talk</a></li>
-             <li><a href="#" class="btn-custom">Request A Demo</a></li>
-
-          </ul>
-       </div>
+    
     </nav>
  </header>

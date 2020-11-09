@@ -1,13 +1,15 @@
 
 .logo {
-    line-height: 60px;
+
     position: fixed;
     float: left;
-    margin: 16px 46px;
-    color: #fff;
-    font-weight: bold;
-    font-size: 20px;
-    letter-spacing: 2px;
+    margin: 0px 46px;
+    -webkit-transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    -moz-transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.logo a img{
+width: 300px;
 }
 header{
     /* height: 100px; */
@@ -22,10 +24,31 @@ header{
 header.page-templete-body__scroll{
     margin-top: -200px;
 }
+.page-templete-body__scroll .logo{
+    top:-200px;
+}
+header.page-templete-body__OnScroll nav{
+    margin-top: 0;
+    box-shadow: 0px 0px 15px rgba(0,0,0,.1);
+    border-bottom: 1px solid #dfdfdf;
+    background: #FFF;
+}
+header.page-templete-body__OnScroll nav > .container > .menu > ul > li > a {
+    font-size: 18px;
+    color: #5c4187;
+}
+header.page-templete-body__OnScroll nav > .container > .menu > ul > li > a.btn-custom{
+    border: 3px solid #5c4187;
+}
+header.page-templete-body__OnScroll .logo{
+    color: #5c4187;
+}
+
 nav {
     position: fixed;
     width: 100%;
     line-height: 60px;
+    background-color: #fff;
 }
 
 nav ul {
@@ -33,7 +56,7 @@ nav ul {
     list-style: none;
     background: rgba(0, 0, 0, 0);
     overflow: hidden;
-    color: #fff;
+    color: #5c4187;
     padding: 0;
     text-align: right;
     margin: 0;
@@ -52,8 +75,8 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
-    font-size: 16px;
+    color: #5c4187;
+    font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.078em;
@@ -62,19 +85,19 @@ nav ul li a {
 .menu-icon {
     line-height: 60px;
     width: 100%;
-    background: #000;
+    background: #fff;
     text-align: right;
     box-sizing: border-box;
     padding: 15px 24px;
     cursor: pointer;
-    color: #fff;
+    color: #800080;
     display: none;
 }
 .menu ul li{
     padding: 20px;
 }
 .menu .btn-custom{
-    border: 3px solid #fff;
+    border: 3px solid #5c4187;
     padding: 5px;
     transition: all 0.3s ease-in-out;
 }
@@ -88,7 +111,8 @@ nav ul li a {
     .logo {
           position: fixed;
           top: 0;
-          margin-top: 16px;
+          margin: 0px 20px !important;
+         
     }
 
     nav ul {
@@ -115,4 +139,21 @@ nav ul li a {
           display: block;
     }
 
+}
+@media (min-width:1025px){
+    header nav .menu ul li.item::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #fff;
+      
+        transition: width .3s;
+    }
+    header.page-templete-body__OnScroll nav .menu ul li.item::after{
+        background: #5c4187;
+    }
+    header nav .menu ul li.item:hover::after {
+        width: 100%;
+    }
 }

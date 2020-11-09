@@ -8,7 +8,7 @@
             </div>
            
         </div>
-        <div class="app-hero-arrow"></div>
+        <div class="app-hero-arrow"><span></span></div>
     </div>
    
 </section>
@@ -65,12 +65,12 @@
                 <div class="app-unique__item">
                     <div class="row">
                        
-                        <div class="col-12 col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                        <div class="col-12 col-lg-4 col-xl-4 col-md-4 col-sm-12">
                             <div class="wrapper">
                                 <div class="wave"></div>
                               </div>
                         </div>
-                        <div class="col-12 col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                        <div class="col-12 col-lg-8 col-xl-8 col-md-8 col-sm-12 order-md-1">
                            
                             <div class="app-unique__text pt-5">
                                 <h3 class="pt-5">
@@ -119,11 +119,9 @@
                             </div>
                         </div>
                         <div class="col-12 col-lg-4 col-xl-4 col-md-4 col-sm-12">
-                            <div class="wrapper">
-                                <div class="wave"></div>
-                              </div>
-                           
-                           
+                            <!-- <div class="case-study-background">
+                                <img src="../../assets/images/teamwork.jpg" class="img-fluid">
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -145,6 +143,54 @@
             </div>
             
         </div>
+        <div class="container-fluid p-0">
+            <div class="app-case-sutdy app-casse-study__tabs">
 
+                <ul class="app-case-study__tabsmenu">
+                    <li class="menu__item" (click)="menu_one()">
+                        <p class="menu-item__text app-item__text">RITU Group</p>
+                    </li>
+                    <li class="menu__item menu_item_two" (click)="menu_two()">
+                        <p class="menu-item__text app-item__text">Manyu Logistics</p>
+                    </li>
+                </ul>
+                <div class="app-case-study__tabscontent">
+                    <div class="app-case-study__tabpanel">
+                        <div class="app-case-study__tab_inner tabinner">
+                            <div class="app-case-study-reveal image">
+                                <div class="app-case-study-tab__image">
+                                    <div aria-hidden="true" style="width: 100%;padding-bottom: 85.3659%;"></div>
+                                    <img  class="tab__images" [src]="currentImgUrl">
+                                <picture>
+                                    <!-- <source class="tab__main_images" [src]="currentImgUrl"> -->
+                                        <source media="(min-width:650px)" [srcset]="currentImgUrl">
+                                            <source media="(min-width:465px)" [srcset]="currentImgUrl">
+                                            <img [src]="currentImgUrl" alt="Flowers" class="tab__main_images" style="width:auto;">
+                                </picture>
+                                </div>
+                            </div>
+                            <div class="app-case-study-content">
+                                <div class="app-case-study-item-text">
+                                    <h3 class="app-case-study__heading_wrapper">
+                                        {{heading}}
+                                     </h3>
+                                </div>
+                                <div class="app-case-study-item-text fadeSe">
+                                    <h4>{{subHeading}}</h4>
+                                    <p>{{text}}</p>
+                                </div>
+                                <div class="app-case-study-item-text">
+                                    <h4>{{subHeading_2}}</h4>
+                                    <p>
+                                        {{solutionText}}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
 
 </section>
