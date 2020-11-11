@@ -12,6 +12,7 @@ import { NgwWowModule } from 'ngx-wow';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { FeaturesComponent } from './features/features.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { FeaturesComponent } from './features/features.component';
     HomeComponent,
     AboutUsComponent,
     FeaturesComponent,
+    ContactUsComponent,
   
   ],
   imports: [

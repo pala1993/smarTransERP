@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { faFacebook, faInstagram, faLinkedin, faFacebookF } from "@fortawesome/free-brands-svg-icons";
+import { NgwWowService } from 'ngx-wow';
 @Component({
   selector: 'app-features',
   templateUrl: './features.component.html',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FeaturesComponent implements OnInit {
 
-  constructor() { }
+  faFacebook = faFacebookF;
+  faInstagram = faInstagram;
+  faLinkedin = faLinkedin;
+  constructor(private wowService: NgwWowService) { }
 
   ngOnInit(): void {
+  
+    this.wowService.init();
   }
 
 }

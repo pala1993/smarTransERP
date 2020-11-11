@@ -1,6 +1,4 @@
-
 .logo {
-
     position: fixed;
     float: left;
     margin: 0px 46px;
@@ -8,10 +6,12 @@
     -moz-transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
     transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
-.logo a img{
-width: 300px;
+
+.logo a img {
+    width: 300px;
 }
-header{
+
+header {
     /* height: 100px; */
     /* border-bottom: 1px solid #797779; */
     position: fixed;
@@ -21,26 +21,32 @@ header{
     -moz-transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
     transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
-header.page-templete-body__scroll{
+
+header.page-templete-body__scroll {
     margin-top: -200px;
 }
-.page-templete-body__scroll .logo{
-    top:-200px;
+
+.page-templete-body__scroll .logo {
+    top: -200px;
 }
-header.page-templete-body__OnScroll nav{
+
+header.page-templete-body__OnScroll nav {
     margin-top: 0;
-    box-shadow: 0px 0px 15px rgba(0,0,0,.1);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .1);
     border-bottom: 1px solid #dfdfdf;
     background: #FFF;
 }
-header.page-templete-body__OnScroll nav > .container > .menu > ul > li > a {
+
+header.page-templete-body__OnScroll nav>.container>.menu>ul>li>a {
     font-size: 18px;
     color: #5c4187;
 }
-header.page-templete-body__OnScroll nav > .container > .menu > ul > li > a.btn-custom{
+
+header.page-templete-body__OnScroll nav>.container>.menu>ul>li>a.btn-custom {
     border: 3px solid #5c4187;
 }
-header.page-templete-body__OnScroll .logo{
+
+header.page-templete-body__OnScroll .logo {
     color: #5c4187;
 }
 
@@ -70,7 +76,7 @@ nav.black ul {
 
 nav ul li {
     display: inline-block;
-    padding: 16px 40px;;
+    padding: 16px 40px;
 }
 
 nav ul li a {
@@ -93,64 +99,60 @@ nav ul li a {
     color: #800080;
     display: none;
 }
-.menu ul li{
+
+.menu ul li {
     padding: 20px;
 }
-.menu .btn-custom{
+
+.menu .btn-custom {
     border: 3px solid #5c4187;
     padding: 5px;
     transition: all 0.3s ease-in-out;
 }
-.menu .btn-custom:hover{
+
+.menu .btn-custom:hover {
     background-color: #b1dce5;
     color: #800080;
     border: 3px solid #b1dce5;
 }
+
 @media(max-width: 786px) {
-
     .logo {
-          position: fixed;
-          top: 0;
-          margin: 0px 20px !important;
-         
+        position: fixed;
+        top: 0;
+        margin: 0px 20px !important;
     }
-
     nav ul {
-          max-height: 0px;
-          background: #000;
+        max-height: 0px;
+        background: #000;
     }
-
     nav.black ul {
-          background: #000;
+        background: #000;
     }
-
     .showing {
-          max-height: 34em;
+        max-height: 34em;
     }
-
     nav ul li {
-          box-sizing: border-box;
-          width: 100%;
-          padding: 24px;
-          text-align: center;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px;
+        text-align: center;
     }
-
     .menu-icon {
-          display: block;
+        display: block;
     }
-
 }
-@media (min-width:1025px){
+
+@media (min-width:1025px) {
     header nav .menu ul li.item::after {
         content: '';
         display: block;
         width: 0;
         height: 2px;
-        background: #fff;
-      
+        background: #5c4187;
         transition: width .3s;
     }
-    header.page-templete-body__OnScroll nav .menu ul li.item::after{
+    header.page-templete-body__OnScroll nav .menu ul li.item::after {
         background: #5c4187;
     }
     header nav .menu ul li.item:hover::after {

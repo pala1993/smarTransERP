@@ -1,109 +1,73 @@
 <footer>
-	<div class="container">
-		<div class="row">
-			<div class="app-footer-main w-100 pb-5">
+    <div class="container">
+        <div class="row">
+            <div class="app-footer-main w-100 pb-5">
 
-				<div class="footer-top-arrow"></div>
-				<div class="row">
-					<div class="col-12 col-md-5 col-lg-4">
-						<div class="app-footer-content">
-							<h3>
-								Start Getting
-								Results
-							</h3>
-							<p>
-								<strong>smarTrans ERP</strong>
-								&nbsp;
-								<br />
+                <div class="footer-top-arrow"></div>
+                <div class="row">
+                    <div class="col-12 col-md-5 col-lg-4">
+                        <div class="app-footer-content">
+                            <h3>
+                                Start Getting Results
+                            </h3>
+                            <p>
+                                <strong>smarTrans ERP</strong> &nbsp;
+                                <br />
 
-							</p>
-							<p>
-								D.NO:54-16-8/17, Venkateswara Nagar,
-								Behind Vinayaka Theatre
-								Vijayawada-520008,
-								<br>
-								Andhra Pradesh, INDIA
-							</p>
-							<p class="phone">
-								<fa-icon [icon]="faPhone"></fa-icon><a href="tel:+91-9959372188"> +91-9959372188</a>
-							</p>
-							<p>
-								<fa-icon [icon]="faEnvelope"></fa-icon><a href="mailto:vsk@mitresource.com"> vsk@mitresource.com</a>
-							</p>
-						</div>
-					</div>
-					<div class="col-12 col-md-7 col-lg-8">
-						<div class="form">
-							<form [formGroup]="myRequestDemoForm" (submit)="showData()">
+                            </p>
+                            <p>
+                                D.NO:54-16-8/17, Venkateswara Nagar, Behind Vinayaka Theatre Vijayawada-520008,
+                                <br> Andhra Pradesh, INDIA
+                            </p>
+                            <p class="phone">
+                                <fa-icon [icon]="faPhone"></fa-icon><a href="tel:+91-9959372188"> +91-9959372188</a>
+                            </p>
+                            <p>
+                                <fa-icon [icon]="faEnvelope"></fa-icon><a href="mailto:vsk@mitresource.com"> vsk@mitresource.com</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-7 col-lg-8">
+                        <div class="form">
+                            <form [formGroup]="myRequestDemoForm" (submit)="showData()">
 
-								<div class="row">
-									<div class="col-lg-12 col-xl-12 col-md-12 col-12 col-sm-12">
-										<div class="form-group">
-											<input type="text" formControlName="FullName" placeholder="Full Name" class="form-control"
-												[ngClass]="{ 'is-invalid': submitted && f.FullName.errors }">
-											<div *ngIf="submitted && f.FullName.errors" class="invalid-feedback">
-												<div *ngIf="f.FullName.errors.required">FullName is required</div>
-											</div>
-											<input type="hidden" formControlName="contactUs">
-										</div>
-									</div>
-									<div class="col-lg-6 col-xl-6 col-md-6 col-12 col-sm-12">
-										<div class="form-group">
-											<input type="text" formControlName="email" placeholder="Email Address" class="form-control"
-												[ngClass]="{ 'is-invalid': submitted && f.email.errors }">
-											<div *ngIf="submitted && f.email.errors" class="invalid-feedback">
-												<div *ngIf="f.email.errors.required">Email is required</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-lg-6 col-xl-6 col-md-6 col-12 col-sm-12">
-										<div class="form-group">
-											<input type="text" formControlName="phoneNumber" placeholder="Phone Number" class="form-control"
-												[ngClass]="{ 'is-invalid': submitted && f.phoneNumber.errors }">
-											<div *ngIf="submitted && f.phoneNumber.errors" class="invalid-feedback">
-												<div *ngIf="f.phoneNumber.errors.required">Phone Number is required</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-lg-12 col-xl-12 col-md-12 col-12 col-sm-12">
-										<div class="form-group">
-											<textarea rows="6" cols="6" placeholder="how can smarTrans ERP help you grow?"
-												class="form-control" formControlName="message"></textarea>
-										</div>
-									</div>
+                                <div class="row">
+                                    <div class="col-lg-12 col-xl-12 col-md-12 col-12 col-sm-12">
+                                        <div class="form-group">
+                                            <textarea rows="10" cols="6" placeholder="smarTrans ERP help you grow?" class="form-control" formControlName="message"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-12">
+                                        <div class="form-group text-center">
+                                            <input type="submit" value="Request for Demo" class="btn-custom">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
+        </div>
+        <div class="row border-top">
+            <div class="app-footer w-100">
+                <div id="footer-bottom">
+                    <div class="container clearfix">
+                        <div id="footer-info">Copyright © {{anio}} smarTrans ERP, All rights reserved.</div>
+                        <div id="et-footer-nav">
+                            <ul class="bottom-nav">
+                                <li class=""><a href="" class="footer-link">Terms of Use</a></li>
+                                <li class=""><a href="" class="footer-link">Privacy Statement</a></li>
 
-								</div>
-
-								<div class="row mt-3">
-									<div class="col-12">
-										<div class="form-group text-center">
-											<input type="submit" value="Request for Demo" class="btn-custom">
-										</div>
-									</div>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-		<div class="row border-top">
-			<div class="app-footer w-100">
-				<div id="footer-bottom">
-					<div class="container clearfix">
-						<div id="footer-info">Copyright © {{anio}} smarTrans ERP, All rights reserved.</div>
-						<div id="et-footer-nav">
-							<ul class="bottom-nav">
-								<li class=""><a href="" class="footer-link">Terms of Use</a></li>
-								<li class=""><a href="" class="footer-link">Privacy Statement</a></li>
-
-							</ul>
-						</div>
-					</div> <!-- .container -->
-				</div>
-			</div>
-		</div>
-	</div>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- .container -->
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>

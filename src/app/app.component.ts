@@ -35,11 +35,7 @@ this.lastScrollTop = st;
 
   const header = document. getElementsByTagName('header')[0];
   
-   if(document.documentElement.scrollTop >=3000){
-      (document.querySelector('.app-fixed_button') as HTMLElement).style.left = "-350px";
-   }else{
-    (document.querySelector('.app-fixed_button') as HTMLElement).style.left = "65px";
-   }
+  
   
   if (document.body.scrollTop > 0 ||     
     document.documentElement.scrollTop > 0) {

@@ -1,31 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+
 @import "~animate.css/animate.css";
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
-
 body {
-	font-family: 'Poppins', sans-serif;
-	font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
     /* color: #242424; */
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-	background: #FFF;
+    background: #FFF;
 }
 
-
-h1,h2,h3,h4{
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
 }
-.app-banner_subtitle{
+
+.app-banner_subtitle {
     color: #fff;
 }
 
-@media(min-width:1650px){
-    .container{
+@media(min-width:1650px) {
+    .container {
         max-width: 1522px;
     }
 }
+
+
 /* 
 body .cursor {
     width: 40px;

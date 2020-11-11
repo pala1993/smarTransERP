@@ -20,10 +20,6 @@ export class FooterComponent implements OnInit {
   }
 private requestDemoForm(){
   this.myRequestDemoForm = this.fb.group({
- FullName:['', Validators.required],
-      email:['', Validators.required],
-      contactUs:['contact-us'],
-      phoneNumber:['', Validators.required],
      message:[''] 
   })
 }

@@ -1,0 +1,96 @@
+<div class="app-contact-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-12">
+                <div class="form">
+                    <form [formGroup]="myContactForm" (submit)="showData()">
+
+                        <div class="row">
+                            <div class="col-lg-6 col-xl-6 col-md-6 col-12 col-sm-12">
+                                <div class="form-group">
+                                    <input type="text" formControlName="FirstName" placeholder="First Name*" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.FirstName.errors }">
+                                    <div *ngIf="submitted && f.FirstName.errors" class="invalid-feedback">
+                                        <div *ngIf="f.FirstName.errors.required">FirstName is required</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-xl-6 col-md-6 col-12 col-sm-12">
+                                <div class="form-group">
+                                    <input type="text" formControlName="LastName" placeholder="Last Name*" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.LastName.errors }">
+                                    <div *ngIf="submitted && f.LastName.errors" class="invalid-feedback">
+                                        <div *ngIf="f.LastName.errors.required">LastName is required</div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-12">
+                                <div class="form-group">
+                                    <input type="text" formControlName="email" placeholder="Email Address" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
+                                    <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                                        <div *ngIf="f.email.errors.required">Email is required</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-xl-6 col-md-6 col-12 col-sm-12">
+                                <div class="form-group">
+                                    <input type="text" formControlName="phoneNumber" placeholder="Phone Number" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.phoneNumber.errors }">
+                                    <div *ngIf="submitted && f.phoneNumber.errors" class="invalid-feedback">
+                                        <div *ngIf="f.phoneNumber.errors.required">Phone Number is required</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-xl-6 col-md-6 col-12 col-sm-12">
+                                <div class="form-group">
+                                    <input type="text" formControlName="company" placeholder="Company" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.company.errors }">
+                                    <div *ngIf="submitted && f.company.errors" class="invalid-feedback">
+                                        <div *ngIf="f.company.errors.required">Phone Number is required</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-xl-12 col-md-12 col-12 col-sm-12">
+                                <div class="form-group">
+                                    <textarea rows="6" cols="6" placeholder="how can smarTrans ERP help you grow?" class="form-control" formControlName="message"></textarea>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-12">
+                                <div class="form-group text-center">
+                                    <input type="submit" value="Submit" class="btn-custom">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- <div class="col-12 col-md-5 col-lg-5">
+                <div class="app-footer-content">
+                    <h3>
+                        Start Getting Results
+                    </h3>
+                    <p>
+                        <strong>smarTrans ERP</strong> &nbsp;
+                        <br />
+
+                    </p>
+                    <p>
+                        D.NO:54-16-8/17, Venkateswara Nagar, Behind Vinayaka Theatre Vijayawada-520008,
+                        <br> Andhra Pradesh, INDIA
+                    </p>
+                    <p class="phone">
+                        <fa-icon [icon]="faPhone"></fa-icon><a href="tel:+91-9959372188"> +91-9959372188</a>
+                    </p>
+                    <p>
+                        <fa-icon [icon]="faEnvelope"></fa-icon><a href="mailto:vsk@mitresource.com"> vsk@mitresource.com</a>
+                    </p>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+</div>

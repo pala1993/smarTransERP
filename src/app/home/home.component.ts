@@ -71,7 +71,7 @@ export class HomeComponent implements OnInit {
       (document.querySelector(".tab__images") as HTMLElement).style.opacity = '0';
       (document.querySelector('.app-case-study-reveal') as HTMLElement).style.opacity = '1';
     }, 300);
-    (document.querySelector(".app-fixed_button") as HTMLElement).style.opacity = "1";
+   
     this.setImgUrl(0);
   }
 
