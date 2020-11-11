@@ -221,7 +221,7 @@
 }
 
 .app-section-title h2 span {
-    font-size: 185px;
+    font-size: 160px;
     color: #e6e6e6;
     position: absolute;
     right: 5%;
@@ -458,7 +458,7 @@
         max-width: 1522px;
     }
     .app-section-title h2 strong {
-        left: 63%;
+        left: 57%;
     }
     .app-section {
         padding: 100px 0px 0px;
@@ -467,5 +467,61 @@
     }
     .m-bottom {
         margin-bottom: 140px !important;
+    }
+}
+
+@media (max-width:1680px) {
+    .app-solution__inner {
+        padding: 9px 10px 15px 16px;
+    }
+    .app-solution__wrapper p {
+        font-size: 18px;
+    }
+    .mobile_app_development.app-solution__inner {
+        padding: 9px 10px 34px 30px;
+    }
+    .about__inner h1 {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width:1400px) {
+    .app-smarTrans__icon li {
+        font-size: 16px;
+    }
+    .app-solution__wrapper h4.title {
+        font-size: 1rem;
+    }
+    .app-solution__wrapper .title {
+        font-size: 1.2rem;
+    }
+    .app-solution__inner {
+        padding: 0px 0px 0px 10px;
+    }
+    .app-solution__wrapper p {
+        margin-bottom: 5px;
+    }
+    .app-smarTrans__icon li {
+        font-size: 13px;
+    }
+    .app-title-about-management h2 strong {
+        left: 57%;
+    }
+    .app-about-us-section .app-about-text h3 {
+        font-size: 30px !important;
+    }
+    .app-about-us-section .app-about-text h3 span {
+        font-size: 50px !important;
+        margin: 0 0 0 0px;
+    }
+    .app-section-title h2 span {
+        font-size: 126px;
+    }
+    .app-section-title h2 strong {
+        top: -48px
+    }
+    .app-solution__picture,
+    .app-solution__figure__wrapper img {
+        height: 500px;
     }
 }

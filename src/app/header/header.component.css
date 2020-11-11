@@ -159,3 +159,9 @@ nav ul li a {
         width: 100%;
     }
 }
+
+@media (max-width:1366px) {
+    nav ul li a {
+        font-size: 16px !important;
+    }
+}

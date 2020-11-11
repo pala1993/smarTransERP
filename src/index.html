@@ -1,13 +1,25 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="has-hover no-js">
+
 <head>
-  <meta charset="utf-8">
-  <title>SmarTransERP</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <title>SmarTransERP</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script>
+        document.querySelector('html').className = 'has-hover js';
+    </script>
+
+    <script>
+        hsjQuery = window['jQuery'];
+    </script>
 </head>
+
 <body>
-  <app-root></app-root>
+    <main class="">
+        <app-root></app-root>
+    </main>
 </body>
+
 </html>

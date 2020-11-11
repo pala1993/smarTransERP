@@ -218,7 +218,7 @@
 }
 
 .app-section-title h2 span {
-    font-size: 185px;
+    font-size: 160px;
     color: #e6e6e6;
     position: absolute;
     right: 5%;
@@ -388,5 +388,68 @@
     }
     .m-bottom {
         margin-bottom: 140px !important;
+    }
+}
+
+@media (max-width:1680px) {
+    .app-section-title h2 strong {
+        left: 57%;
+    }
+    .about__inner h1 {
+        font-size: 5rem;
+    }
+    .app-about__text .container {
+        max-width: 1400px;
+    }
+}
+
+@media(max-width:1500px) {
+    .about__inner h1 {
+        font-size: 3rem;
+    }
+    .about__inner h1 {
+        font-size: 4rem;
+    }
+    .app-about-us-section .app-about-text h3 {
+        font-size: 30px;
+    }
+    .app-about-us-section .app-about-text h3 span {
+        font-size: 50px;
+        margin: 0px 0 0 0px;
+    }
+    .app-about-text p {
+        font-size: 16px;
+    }
+    .app-about-shape {
+        top: -180px;
+        width: 350px;
+        transform: translateX(-70%);
+    }
+    .app-about-image img {
+        height: 360px;
+    }
+    .app-section-title h2 strong {
+        left: 48% !important;
+    }
+    .employee-image {
+        height: 315px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .employee-name h1 {
+        font-size: 20px;
+    }
+    .employee {
+        height: 315px;
+    }
+    .app-section-title h2 span {
+        font-size: 126px;
+    }
+}
+
+@media (max-width:1366px) {
+    .app-about__text .container {
+        max-width: 1040px;
     }
 }

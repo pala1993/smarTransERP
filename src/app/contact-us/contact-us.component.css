@@ -1,5 +1,66 @@
 .app-contact-us {
-    padding-top: 250px;
+    padding-top: 200px;
     position: relative;
     z-index: 1;
+}
+
+@media (max-width:1600px) {
+    .contact-us h1 {
+        font-size: 160px;
+        font-weight: 900;
+        margin: 0;
+        color: #5c4187;
+    }
+    .contact-us h5 {
+        font-size: 50px;
+        font-weight: 900;
+        margin: 0;
+        color: #777777;
+    }
+    .contact-us {
+        padding-bottom: 25px;
+    }
+    .form .form-control {
+        height: 57px;
+    }
+}
+
+@media (max-width:1900px) {
+    .contact-us h1 {
+        font-size: 100px;
+        font-weight: 900;
+        margin: 0;
+        color: #5c4187;
+        text-align: center;
+    }
+    .contact-us h5 {
+        font-size: 50px;
+        font-weight: 900;
+        margin: 0;
+        color: #777777;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    .contact-us {
+        padding-bottom: 25px;
+    }
+    .form input {
+        height: 77px;
+    }
+    .form {
+        padding-bottom: 50px;
+    }
+    .btn-custom {
+        background-color: #800080;
+        color: #fff;
+        padding: 17px 65px;
+        border-radius: 40px;
+        font-size: 24px;
+        border-width: 0;
+        border-radius: 40px;
+        text-align: left;
+    }
+    input[type=submit] {
+        height: 57px !important;
+    }
 }

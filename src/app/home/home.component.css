@@ -199,7 +199,7 @@
 }
 
 .app-section-title h2 span {
-    font-size: 185px;
+    font-size: 160px;
     color: #a7a7a7;
     position: absolute;
     right: 5%;
@@ -253,13 +253,32 @@
 .app-productivity {
     position: absolute;
     right: -193px;
-    top: 0;
+    top: 0px;
     left: 0;
 }
 
-.app-productivity img {
-    height: 500px;
-    width: 850px;
+
+/* .productivity-bg,
+.requirements {
+    height: 450px;
+    max-height: 450px;
+} */
+
+.productivity-bg {
+    top: 50px;
+}
+
+.productivity-bg .project-large,
+.requirements .project-large {
+    padding-top: 65%;
+}
+
+.projects li {
+    list-style: none;
+}
+
+.projects li::marker {
+    list-style: none;
 }
 
 .app-wraper .custom-mb {
@@ -578,27 +597,56 @@
     }
     .app-case-study-content {
         width: 500px;
-        padding: 70px 65px;
+        padding: 35px 30px;
     }
     .app-case-study__tabsmenu li {
         font-size: 14px;
         line-height: 22px;
         margin: 14px 0px;
     }
+    .app-case-study__tabsmenu li.active {
+        font-size: 25px;
+    }
+    .app-case-study-item-text .app-case-study__heading_wrapper {
+        font-size: 25px;
+        margin-bottom: 15px
+    }
+    .app-case-study-item-text .app-case-study__heading_wrapper:after {
+        height: 10px;
+    }
+    .app-case-study-item-text h4 {
+        font-size: 22px;
+    }
+    .app-case-study-item-text p {
+        font-size: 16px;
+        padding-top: 5px;
+    }
+    .app-case-study-reveal.image {
+        width: calc(100% - 470px) !important;
+    }
+    .app-unique__text,
+    .custom-pd {
+        padding-top: 0px !important;
+    }
 }
 
 @media screen and (max-width:1366px) {
     .app-banner_title {
-        font-size: 5rem;
+        font-size: 4rem;
     }
     .app-banner_subtitle {
         font-size: 1rem;
     }
     .app-unique__item .app-unique__text h3 {
-        font-size: 35px !important;
+        font-size: 30px !important;
+        line-height: 62px;
     }
     .app-unique__item .app-unique__text h3 div:nth-child(2) {
-        font-size: 68px !important;
+        font-size: 50px !important;
+    }
+    .app-unique__items:nth-child(2),
+    .app-unique__items:nth-child(3) {
+        margin-top: 115px;
     }
 }
 
@@ -658,7 +706,7 @@
 
 @media screen and (min-width:1366px) and (max-width:1440px) {
     .app-banner_title {
-        font-size: 4.5rem;
+        font-size: 4rem;
     }
     .app-section-title h2 {
         font-size: 1.4rem;
@@ -673,7 +721,7 @@
         font-size: 75px;
     }
     .app-unique__subtext p {
-        font-size: 1.2rem;
+        font-size: 16px;
     }
     .app-btn_custom {
         font-size: 20px;
@@ -688,20 +736,20 @@
 
 @media screen and (min-width: 1441px) {
     .app-banner_inner .container {
-        min-width: 1450px;
+        max-width: 1450px !important;
     }
     .app-banner_inner {
         padding: 155px 0;
     }
     .app-banner_title {
-        font-size: 6rem;
+        font-size: 5rem;
     }
     .app-banner_subtitle {
         font-size: 20px;
         font-size: 1.25rem;
     }
     .app-section-title h2 strong {
-        left: 68%;
+        left: 57%;
     }
     .custom-padding-top {
         padding-top: 35px;
@@ -790,5 +838,14 @@
     }
     .wave {
         top: -60%;
+    }
+}
+
+@media (max-width:1680px) {
+    .custom-pd {
+        padding-left: 250px;
+    }
+    .app-unique__subtext {
+        width: 100%;
     }
 }
