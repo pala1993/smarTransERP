@@ -33,10 +33,10 @@
 }
 
 .about__inner h1 {
-    font-size: 6rem;
+    font-size: 4rem;
     margin: 0 0 15px;
-    /* font-weight: 900; */
     color: #5c4187;
+    line-height: 96px;
 }
 
 .app-about__page__hero .app-about__inner__text h1 span {
@@ -45,22 +45,15 @@
 
 .about__inner h2 {
     font-weight: 300;
-    color: #777777;
+    color: #7d7d7d;
     font-size: 48px;
     margin: 0;
 }
 
-.app-about__inner__text h1 span:after {
-    content: '';
-    width: 108%;
-    height: 36px;
-    background: #59c6dd;
-    border-radius: 18px;
-    top: 100%;
-    left: -4%;
-    position: absolute;
-    z-index: -1;
-    margin-top: -60px;
+.app-about__inner__text h1 span {
+    background: #5c4187;
+    color: #fff;
+    padding: 0 15px
 }
 
 .app-about__page__hero .app-about__text {
@@ -154,12 +147,14 @@
 }
 
 .app-about-us-section .app-about-text h3 span {
-    font-size: 100px;
-    color: #a7a7a7;
+    font-size: 70px;
+    color: #fff;
     display: block;
-    margin: -20px 0 0 0px;
+    margin: 0px 0 0;
     position: relative;
     z-index: -1;
+    padding: 0 15px;
+    background: #5c4187;
 }
 
 .app-about-text-title {
@@ -218,11 +213,11 @@
 }
 
 .app-section-title h2 span {
-    font-size: 160px;
-    color: #e6e6e6;
+    font-size: 150px;
+    color: #7d7d7d;
     position: absolute;
     right: 5%;
-    top: 20px;
+    top: 42px;
     z-index: -1;
     white-space: nowrap;
 }
@@ -231,7 +226,7 @@
     content: '';
     width: 310px;
     height: 310px;
-    background: #59c6dd;
+    background: #d1bdee;
     position: absolute;
     right: -115px;
     top: -60px;
@@ -351,21 +346,16 @@
 }
 
 .app-services__title h3 {
-    color: #5c4187;
+    color: #fff;
 }
 
-.app-services__title h3:after {
+.app-services__title h3 {
     margin-top: 8px;
 }
 
-.app-services__title h3:after {
-    content: '';
-    width: 102px;
-    height: 16px;
-    background: #59c6dd;
-    border-radius: 8px;
-    display: block;
-    margin: 3px 0 15px;
+.app-services__title h3 {
+    background-color: #5c4187;
+    padding: 5px 15px;
 }
 
 @media (min-width: 1900px) {
@@ -401,20 +391,20 @@
     .app-about__text .container {
         max-width: 1400px;
     }
+    .about__inner h2 {
+        font-size: 30px;
+    }
 }
 
 @media(max-width:1500px) {
     .about__inner h1 {
         font-size: 3rem;
     }
-    .about__inner h1 {
-        font-size: 4rem;
-    }
     .app-about-us-section .app-about-text h3 {
         font-size: 30px;
     }
     .app-about-us-section .app-about-text h3 span {
-        font-size: 50px;
+        font-size: 40px;
         margin: 0px 0 0 0px;
     }
     .app-about-text p {
@@ -429,7 +419,10 @@
         height: 360px;
     }
     .app-section-title h2 strong {
-        left: 48% !important;
+        left: 60% !important;
+    }
+    .app-services__title h3 {
+        font-size: 1em;
     }
     .employee-image {
         height: 315px;
@@ -444,12 +437,24 @@
         height: 315px;
     }
     .app-section-title h2 span {
-        font-size: 126px;
+        font-size: 115px;
+    }
+    .app-section-title h2 strong {
+        font-size: 1.5em;
+    }
+    .app-about__page__hero.about__inner {
+        min-height: 500px;
     }
 }
 
-@media (max-width:1366px) {
+@media (max-width:1400px) {
     .app-about__text .container {
         max-width: 1040px;
+    }
+    .employee:hover>.employee-image {
+        margin-top: -70px;
+    }
+    .employee:hover>.employee-details .employee-social-link ul li {
+        bottom: 150px;
     }
 }

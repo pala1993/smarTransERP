@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
   images = [
     {
       "img": "../../assets/images/ritu.jpg",
-      "heading": "RITU GROUP",
+      "heading": "RITU Logistics",
       "subHeading": "Problem:",
       "text": "RITU Group, one of the largest transportation groups in Rajasthan, did not have a technical platform for their business. They wanted a way out for all their operations at one place to serve their customers with more efficiency.",
       "subHeading_2":"smarTrans Solution:",

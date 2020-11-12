@@ -110,10 +110,11 @@ nav ul li a {
     transition: all 0.3s ease-in-out;
 }
 
-.menu .btn-custom:hover {
-    background-color: #b1dce5;
-    color: #800080;
-    border: 3px solid #b1dce5;
+.menu .btn-custom:hover,
+.page-templete-body__OnScroll .menu .btn-custom:hover {
+    background-color: #5c4187;
+    color: #fff !important;
+    border: 3px solid #5c4187;
 }
 
 @media(max-width: 786px) {

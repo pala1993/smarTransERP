@@ -141,10 +141,10 @@
 }
 
 .app-about-us-section .app-about-text h3 span {
-    font-size: 100px;
-    color: #a7a7a7;
+    font-size: 70px;
+    color: #7d7d7d;
     display: block;
-    margin: -20px 0 0 0px;
+    margin: 0px 0 0 0px;
     position: relative;
     z-index: -1;
 }
@@ -221,11 +221,11 @@
 }
 
 .app-section-title h2 span {
-    font-size: 160px;
-    color: #e6e6e6;
+    font-size: 150px;
+    color: #7d7d7d;
     position: absolute;
     right: 5%;
-    top: 20px;
+    top: 40px;
     z-index: -1;
     white-space: nowrap;
 }
@@ -234,7 +234,7 @@
     content: '';
     width: 310px;
     height: 310px;
-    background: #59c6dd;
+    background: #d1bdee;
     position: absolute;
     right: -115px;
     top: -60px;
@@ -371,17 +371,15 @@
     margin: 3px 0 15px;
 }
 
-.app-about__inner__text h1 span:after {
-    content: '';
-    width: 108%;
-    height: 36px;
-    background: #59c6dd;
-    border-radius: 18px;
-    top: 100%;
-    left: -4%;
-    position: absolute;
-    z-index: -1;
+.app-about__inner__text h1 {
+    line-height: 150%;
+}
+
+.app-about__inner__text h1 span {
+    background: #5c4187;
     margin-top: -60px;
+    color: #fff;
+    padding: 0 15px;
 }
 
 .app-smarTrans__icon li {
@@ -423,7 +421,7 @@
 }
 
 .app-solution__inner {
-    padding: 64px 120px 34px 48px;
+    padding: 15px 50px 0px 50px;
 }
 
 .app-solution__inner .app-solution__column-inner {
@@ -433,23 +431,20 @@
     padding-top: 0;
 }
 
-.app-solution__wrapper h2.title::after {
-    content: '';
-    width: 102px;
-    height: 16px;
+.app-solution__wrapper h2.title {
     background: #5c4187;
-    border-radius: 8px;
+    color: #fff;
     display: block;
-    margin: 3px 0 15px;
+    padding: 5px 15px;
 }
 
 .app-solution__wrapper h4.title {
-    color: #a7a7a7;
+    color: #7d7d7d;
 }
 
 @media (min-width: 1900px) {
     .app-section-title h2 strong {
-        left: 60% !important;
+        left: 43% !important;
     }
 }
 
@@ -481,7 +476,12 @@
         padding: 9px 10px 34px 30px;
     }
     .about__inner h1 {
-        font-size: 5rem;
+        font-size: 4rem;
+    }
+    .app-about-shape {
+        width: 350px;
+        height: 310px;
+        left: 15%;
     }
 }
 
@@ -490,7 +490,7 @@
         font-size: 16px;
     }
     .app-solution__wrapper h4.title {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     .app-solution__wrapper .title {
         font-size: 1.2rem;
@@ -500,12 +500,16 @@
     }
     .app-solution__wrapper p {
         margin-bottom: 5px;
+        font-size: 16px !important;
+    }
+    .app-about__page__hero.about__inner {
+        min-height: 500px;
     }
     .app-smarTrans__icon li {
-        font-size: 13px;
+        font-size: 16px;
     }
     .app-title-about-management h2 strong {
-        left: 57%;
+        left: 37%;
     }
     .app-about-us-section .app-about-text h3 {
         font-size: 30px !important;
@@ -518,10 +522,16 @@
         font-size: 126px;
     }
     .app-section-title h2 strong {
-        top: -48px
+        top: 2px
     }
     .app-solution__picture,
     .app-solution__figure__wrapper img {
         height: 500px;
+    }
+    .app-section-title h2 strong {
+        font-size: 1.5em;
+    }
+    .app-features-sec {
+        padding-top: 105px !important;
     }
 }
