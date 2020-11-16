@@ -1,460 +1,585 @@
-.app-about__page__hero.about__inner {
-    min-height: 900px;
-}
-
-.about__inner {
-    height: 100vh;
-    min-height: 500px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    overflow: hidden;
-}
-
-.app-about__page__hero:before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 2;
-    opacity: 0.8;
-    background: #FFF;
-}
-
-.about__inner .app-about__text {
-    text-align: center;
-}
-
-.app-about__page__hero .app-about__inner__text {
-    margin: 0;
-}
-
-.about__inner h1 {
-    font-size: 4rem;
-    margin: 0 0 15px;
-    color: #5c4187;
-    line-height: 96px;
-}
-
-.app-about__page__hero .app-about__inner__text h1 span {
-    position: relative;
-}
-
-.about__inner h2 {
-    font-weight: 300;
-    color: #7d7d7d;
-    font-size: 48px;
-    margin: 0;
-}
-
-.app-about__inner__text h1 span {
-    background: #5c4187;
-    color: #fff;
-    padding: 0 15px
-}
-
-.app-about__page__hero .app-about__text {
-    position: absolute;
-    width: 100%;
-    z-index: 3;
-    left: 0;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-.app-hero-arrow span {
-    width: 43px;
-    height: 24px;
-    background: url(../../assets/images/down@2x_gray.png) no-repeat center;
-    background-size: 100%;
-    position: absolute;
-    bottom: 75px;
-    left: 50%;
-    margin-left: -21.5px;
-    z-index: 5;
-    cursor: pointer;
-    -webkit-animation: ca3_fade_move_down 2s ease-in-out infinite;
-    -moz-animation: ca3_fade_move_down 2s ease-in-out infinite;
-    animation: ca3_fade_move_down 2s ease-in-out infinite;
-}
-
-
-/*animated scroll arrow animation*/
-
-@-webkit-keyframes ca3_fade_move_down {
-    0% {
-        -webkit-transform: translate(0, -20px);
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        -webkit-transform: translate(0, 20px);
-        opacity: 0;
-    }
-}
-
-@-moz-keyframes ca3_fade_move_down {
-    0% {
-        -moz-transform: translate(0, -20px);
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        -moz-transform: translate(0, 20px);
-        opacity: 0;
-    }
-}
-
-@keyframes ca3_fade_move_down {
-    0% {
-        transform: translate(0, -20px);
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        transform: translate(0, 20px);
-        opacity: 0;
-    }
-}
-
-.app-about-page-inner__bottom {
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 3;
-}
-
-.app-about-page-inner__bottom .container {
-    position: relative;
-}
-
-.app-about-us-section .app-about-text h3 {
-    font-size: 60px;
-    font-weight: 900;
-    margin: 0 0 30px;
-}
-
-.app-about-us-section .app-about-text h3 span {
-    font-size: 70px;
-    color: #fff;
-    display: block;
-    margin: 0px 0 0;
-    position: relative;
-    z-index: -1;
-    padding: 0 15px;
-    background: #5c4187;
-}
-
-.app-about-text-title {
-    color: #5c4187;
-}
-
-.app-about-shape {
-    width: 609px;
-    height: 613px;
-    background: url(../../assets/images/about__shape.png) no-repeat center;
-    background-size: 100%;
-    position: absolute;
-    bottom: 0;
-    z-index: -2;
-    top: 0;
-    left: 25%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-}
-
-.app-section {
-    margin: 0 0 140px;
-    z-index: 3;
-    position: relative;
-}
-
-.app-title-about-management {
-    padding: 45px 45px 65px;
-}
-
-.app-section-title>h2 {
-    z-index: 1;
-    font-weight: 900;
-    margin: 0 0 80px;
-    display: inline-block;
-    color: #5c4187;
-    position: relative;
-    width: 100%;
-}
-
-.app-section-title {
-    padding: 55px 25px 15px;
-}
-
-.app-section-title h2 strong {
-    display: block;
-    font-weight: 900;
-}
-
-.app-section-title h2 strong {
-    position: absolute;
-    left: 68%;
-    font-size: 2em;
-    top: -20px;
-}
-
-.app-section-title h2 span {
-    font-size: 150px;
-    color: #7d7d7d;
-    position: absolute;
-    right: 5%;
-    top: 42px;
-    z-index: -1;
-    white-space: nowrap;
-}
-
-.app-section-title>h2::before {
-    content: '';
-    width: 310px;
-    height: 310px;
-    background: #d1bdee;
-    position: absolute;
-    right: -115px;
-    top: -60px;
-    z-index: -1;
-    border-radius: 50%;
-}
-
-.app-about-image {
-    position: absolute;
-    right: -193px;
-    top: 0;
-    left: 0;
-}
-
-.app-about-image img {
-    height: 500px;
-    width: 850px;
-}
-
-.pos {
-    position: relative;
-}
-
-.app-about-padding {
-    padding-top: 100px;
-}
-
-.employee {
-    width: 100%;
-    background-color: #5c4187;
-    margin: 10px auto;
-    display: block;
-    overflow: hidden;
-    height: 400px;
-    border-radius: 10px;
-}
-
-.employee:hover>.employee-image {
-    margin-top: -100px;
-}
-
-.employee-image {
-    background-color: #fff;
-    height: 400px;
-    width: 100%;
-    transition: 0.5s;
-}
-
-.employee-image img {
-    height: 100%;
-}
-
-.employee-name {
-    color: #fff;
-    font-weight: bold;
-    padding: 5px;
-}
-
-.employee-name h1 {
-    font-size: 30px;
-}
-
-.employee-name span {
-    font-size: 20px;
-    color: yellow;
-    padding: 0px;
-}
-
-.employee-social-link ul li {
-    position: relative;
-    bottom: -120px;
-}
-
-.employee-social-link ul {
-    text-align: center;
-    list-style: none;
-}
-
-.employee-social-link ul li {
-    display: inline-block;
-    margin: 7px;
-    background-color: #5c4187;
-    padding: 10px;
-    border-radius: 50%;
-    line-height: 0.1;
-    margin-left: -5px;
-}
-
-.employee-social-link i {
-    font-size: 15px;
-    color: #fff;
-    animation-name: rotate-icon;
-}
-
-.employee-social-link ul li:nth-child(1) {
-    transition: 1.0s;
-}
-
-.employee-social-link ul li:nth-child(2) {
-    transition: 1.3s;
-}
-
-.employee-social-link ul li:nth-child(3) {
-    transition: 1.6s;
-}
-
-.employee-social-link ul li:nth-child(4) {
-    transition: 1.9s;
-}
-
-.employee-social-link ul li:nth-child(5) {
-    transition: 2.2s;
-}
-
-.employee:hover>.employee-details .employee-social-link ul li {
-    bottom: 250px;
-}
-
-.app-services__title h3 {
-    color: #fff;
-}
-
-.app-services__title h3 {
-    margin-top: 8px;
-}
-
-.app-services__title h3 {
-    background-color: #5c4187;
-    padding: 5px 15px;
-}
-
-@media (min-width: 1900px) {
-    .app-section-title h2 strong {
-        left: 60% !important;
-    }
-}
-
-@media (min-width: 1600px) {
-    .app-wraper .container {
-        max-width: 1522px;
-    }
-    .app-section-title h2 strong {
-        left: 63%;
-    }
-    .app-section {
-        padding: 100px 0px 0px;
-        margin-top: 100px;
-        margin-bottom: 0;
-    }
-    .m-bottom {
-        margin-bottom: 140px !important;
-    }
-}
-
-@media (max-width:1680px) {
-    .app-section-title h2 strong {
-        left: 57%;
-    }
-    .about__inner h1 {
-        font-size: 5rem;
-    }
-    .app-about__text .container {
-        max-width: 1400px;
-    }
-    .about__inner h2 {
-        font-size: 30px;
-    }
-}
-
-@media(max-width:1500px) {
-    .about__inner h1 {
-        font-size: 3rem;
-    }
-    .app-about-us-section .app-about-text h3 {
-        font-size: 30px;
-    }
-    .app-about-us-section .app-about-text h3 span {
-        font-size: 40px;
-        margin: 0px 0 0 0px;
-    }
-    .app-about-text p {
-        font-size: 16px;
-    }
-    .app-about-shape {
-        top: -180px;
-        width: 350px;
-        transform: translateX(-70%);
-    }
-    .app-about-image img {
-        height: 360px;
-    }
-    .app-section-title h2 strong {
-        left: 60% !important;
-    }
-    .app-services__title h3 {
-        font-size: 1em;
-    }
-    .employee-image {
-        height: 315px;
-    }
-    p {
-        font-size: 16px;
-    }
-    .employee-name h1 {
-        font-size: 20px;
-    }
-    .employee {
-        height: 315px;
-    }
-    .app-section-title h2 span {
-        font-size: 115px;
-    }
-    .app-section-title h2 strong {
-        font-size: 1.5em;
-    }
     .app-about__page__hero.about__inner {
+        min-height: 900px;
+    }
+    
+    .about__inner {
+        height: 100vh;
         min-height: 500px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
     }
-}
-
-@media (max-width:1400px) {
-    .app-about__text .container {
-        max-width: 1040px;
+    
+    .app-about__page__hero:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        opacity: 0.8;
+        background: #FFF;
     }
+    
+    .about__inner .app-about__text {
+        text-align: center;
+    }
+    
+    .app-about__page__hero .app-about__inner__text {
+        margin: 0;
+    }
+    
+    .about__inner h1 {
+        font-size: 4rem;
+        margin: 0 0 15px;
+        color: #5c4187;
+        line-height: 96px;
+    }
+    
+    .app-about__page__hero .app-about__inner__text h1 span {
+        position: relative;
+    }
+    
+    .about__inner h2 {
+        font-weight: 300;
+        color: #7d7d7d;
+        font-size: 48px;
+        margin: 0;
+    }
+    
+    .app-about__inner__text h1 span {
+        background: #5c4187;
+        color: #fff;
+        padding: 0 15px
+    }
+    
+    .app-about__page__hero .app-about__text {
+        position: absolute;
+        width: 100%;
+        z-index: 3;
+        left: 0;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    
+    .app-hero-arrow span {
+        width: 43px;
+        height: 24px;
+        background: url(../../assets/images/down@2x_gray.png) no-repeat center;
+        background-size: 100%;
+        position: absolute;
+        bottom: 75px;
+        left: 50%;
+        margin-left: -21.5px;
+        z-index: 5;
+        cursor: pointer;
+        -webkit-animation: ca3_fade_move_down 2s ease-in-out infinite;
+        -moz-animation: ca3_fade_move_down 2s ease-in-out infinite;
+        animation: ca3_fade_move_down 2s ease-in-out infinite;
+    }
+    /*animated scroll arrow animation*/
+    
+    @-webkit-keyframes ca3_fade_move_down {
+        0% {
+            -webkit-transform: translate(0, -20px);
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            -webkit-transform: translate(0, 20px);
+            opacity: 0;
+        }
+    }
+    
+    @-moz-keyframes ca3_fade_move_down {
+        0% {
+            -moz-transform: translate(0, -20px);
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            -moz-transform: translate(0, 20px);
+            opacity: 0;
+        }
+    }
+    
+    @keyframes ca3_fade_move_down {
+        0% {
+            transform: translate(0, -20px);
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            transform: translate(0, 20px);
+            opacity: 0;
+        }
+    }
+    
+    .app-about-page-inner__bottom {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 3;
+    }
+    
+    .app-about-page-inner__bottom .container {
+        position: relative;
+    }
+    
+    .app-about-us-section .app-about-text h3 {
+        font-size: 60px;
+        font-weight: 900;
+        margin: 0 0 30px;
+    }
+    
+    .app-about-us-section .app-about-text h3 span {
+        font-size: 70px;
+        color: #fff;
+        display: block;
+        margin: 0px 0 0;
+        position: relative;
+        z-index: -1;
+        padding: 0 15px;
+        background: #5c4187;
+    }
+    
+    .app-about-text-title {
+        color: #5c4187;
+    }
+    
+    .app-about-shape {
+        width: 609px;
+        height: 613px;
+        background: url(../../assets/images/about__shape.png) no-repeat center;
+        background-size: 100%;
+        position: absolute;
+        bottom: 0;
+        z-index: -2;
+        top: 0;
+        left: 25%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+    
+    .app-section {
+        margin: 0 0 140px;
+        z-index: 3;
+        position: relative;
+    }
+    
+    .app-title-about-management {
+        padding: 45px 45px 65px;
+    }
+    
+    .app-section-title>h2 {
+        z-index: 1;
+        font-weight: 900;
+        margin: 0 0 80px;
+        display: inline-block;
+        color: #5c4187;
+        position: relative;
+        width: 100%;
+    }
+    
+    .app-section-title {
+        padding: 55px 25px 15px;
+    }
+    
+    .app-section-title h2 strong {
+        display: block;
+        font-weight: 900;
+    }
+    
+    .app-section-title h2 strong {
+        position: absolute;
+        left: 68%;
+        font-size: 2em;
+        top: -20px;
+    }
+    
+    .app-section-title h2 span {
+        font-size: 150px;
+        color: #7d7d7d;
+        position: absolute;
+        right: 5%;
+        top: 42px;
+        z-index: -1;
+        white-space: nowrap;
+    }
+    
+    .app-section-title>h2::before {
+        content: '';
+        width: 310px;
+        height: 310px;
+        background: #d1bdee;
+        position: absolute;
+        right: -115px;
+        top: -60px;
+        z-index: -1;
+        border-radius: 50%;
+    }
+    
+    .app-about-image {
+        position: absolute;
+        right: -193px;
+        top: 0;
+        left: 0;
+    }
+    
+    .app-about-image img {
+        height: 500px;
+        width: 850px;
+    }
+    
+    .pos {
+        position: relative;
+    }
+    
+    .app-about-padding {
+        padding-top: 100px;
+    }
+    
+    .employee {
+        width: 100%;
+        background-color: #5c4187;
+        margin: 10px auto;
+        display: block;
+        overflow: hidden;
+        height: 400px;
+        border-radius: 10px;
+    }
+    
     .employee:hover>.employee-image {
-        margin-top: -70px;
+        margin-top: -100px;
     }
+    
+    .employee-image {
+        background-color: #fff;
+        height: 400px;
+        width: 100%;
+        transition: 0.5s;
+    }
+    
+    .employee-image img {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .employee-name {
+        color: #fff;
+        font-weight: bold;
+        padding: 5px;
+    }
+    
+    .employee-name h1 {
+        font-size: 30px;
+    }
+    
+    .employee-name span {
+        font-size: 20px;
+        color: yellow;
+        padding: 0px;
+    }
+    
+    .employee-social-link ul li {
+        position: relative;
+        bottom: -120px;
+    }
+    
+    .employee-social-link ul {
+        text-align: center;
+        list-style: none;
+    }
+    
+    .employee-social-link ul li {
+        display: inline-block;
+        margin: 7px;
+        background-color: #5c4187;
+        padding: 10px;
+        border-radius: 50%;
+        line-height: 0.1;
+        margin-left: -5px;
+    }
+    
+    .employee-social-link i {
+        font-size: 15px;
+        color: #fff;
+        animation-name: rotate-icon;
+    }
+    
+    .employee-social-link ul li:nth-child(1) {
+        transition: 1.0s;
+    }
+    
+    .employee-social-link ul li:nth-child(2) {
+        transition: 1.3s;
+    }
+    
+    .employee-social-link ul li:nth-child(3) {
+        transition: 1.6s;
+    }
+    
+    .employee-social-link ul li:nth-child(4) {
+        transition: 1.9s;
+    }
+    
+    .employee-social-link ul li:nth-child(5) {
+        transition: 2.2s;
+    }
+    
     .employee:hover>.employee-details .employee-social-link ul li {
-        bottom: 150px;
+        bottom: 250px;
     }
-}
+    
+    .app-services__title h3 {
+        color: #fff;
+    }
+    
+    .app-services__title h3 {
+        margin-top: 8px;
+    }
+    
+    .app-services__title h3 {
+        background-color: #5c4187;
+        padding: 5px 15px;
+    }
+    
+    @media (max-width:1680px) {
+        .app-section-title h2 strong {
+            left: 57%;
+        }
+        .about__inner h1 {
+            font-size: 4rem;
+        }
+        .app-about__text .container {
+            max-width: 1400px;
+        }
+        .about__inner h2 {
+            font-size: 30px;
+        }
+    }
+    
+    @media(max-width:1500px) {
+        .about__inner h1 {
+            font-size: 3rem;
+            line-height: 150%;
+        }
+        .app-about-us-section .app-about-text h3 {
+            font-size: 30px;
+        }
+        .app-about-us-section .app-about-text h3 span {
+            font-size: 40px;
+            margin: 0px 0 0 0px;
+        }
+        .app-about-text p {
+            font-size: 16px;
+        }
+        .app-about-shape {
+            top: -180px;
+            width: 350px;
+            transform: translateX(-70%);
+        }
+        .app-about-image img {
+            height: 360px;
+        }
+        .app-section-title h2 strong {
+            left: 60% !important;
+        }
+        .app-services__title h3 {
+            font-size: 1em;
+        }
+        p {
+            font-size: 16px;
+        }
+        .employee-name h1 {
+            font-size: 20px;
+        }
+        .app-section-title h2 span {
+            font-size: 95px;
+        }
+        .app-section-title h2 strong {
+            font-size: 1.5em;
+        }
+        .app-about__page__hero.about__inner {
+            min-height: 500px;
+        }
+    }
+    
+    @media(min-width:1200px) {
+        .app-about__text .container {
+            max-width: 1140px;
+        }
+        .employee:hover>.employee-image {
+            margin-top: -70px;
+        }
+        .employee:hover>.employee-details .employee-social-link ul li {
+            bottom: 150px;
+        }
+        .app-section.app-team {
+            padding-top: 100px !important;
+        }
+        .employee,
+        .employee-image {
+            height: 315px;
+        }
+        .app-about-padding {
+            margin: 0 0 0px;
+        }
+        .exceptional__app h2 strong {
+            left: 37% !important;
+        }
+        .app-section-title h2 strong {
+            font-size: 1.4em;
+        }
+    }
+    
+    @media screen and (min-width:1100px) and (max-width:1200px) {
+        .app-services__title h3 {
+            font-size: 1.3rem;
+        }
+        .app-section-title h2 strong {
+            font-size: 1.2em;
+        }
+        .app-title-about-management h2 strong {
+            left: 60%;
+        }
+        .exceptional__app h2 strong {
+            left: 40% !important;
+        }
+        .employee:hover>.employee-details .employee-social-link ul li {
+            bottom: 200px;
+            left: -15px;
+        }
+        .employee:hover>.employee-image {
+            margin-top: -65px;
+        }
+        .employee-image,
+        .employee {
+            height: 300px;
+        }
+        about-us-section .app-about-text h3 {
+            font-size: 25px;
+        }
+        .app-about-us-section .app-about-text h3 span {
+            font-size: 30px;
+            margin: 0px 0 0 0px;
+        }
+        .app-about__text .container {
+            max-width: 960px;
+        }
+    }
+    
+    @media screen and (min-width:1300px) and (max-width:1366px) {
+        .exceptional__app h2 strong {
+            left: 43% !important;
+        }
+    }
+    
+    @media (min-width:1400px) {
+        .app-about__text .container {
+            max-width: 1522px;
+        }
+        .employee:hover>.employee-image {
+            margin-top: -70px;
+        }
+        .employee:hover>.employee-details .employee-social-link ul li {
+            bottom: 150px;
+        }
+        .col-lg-7 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+        .col-lg-5 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+        .app-section {
+            margin: 80px 0 140px;
+        }
+        .app-section.m-bottom {
+            margin: 10px 0 80px;
+        }
+        .app-about-padding {
+            margin: 0px;
+        }
+        .employee,
+        .employee-image {
+            height: 360px;
+        }
+    }
+    
+    @media (min-width:1600px) {
+        .app-about-us-section .app-about-text h3 {
+            font-size: 30px;
+        }
+        .app-about-us-section .app-about-text h3 span {
+            font-size: 40px;
+            padding: 15px 15px;
+        }
+        .app-banner_title,
+        .app-about__inner__text h1 {
+            font-size: 4.5rem !important;
+        }
+        .app-section-title h2 span {
+            font-size: 120px;
+        }
+        .app-section-title h2 strong {
+            font-size: 1.5em;
+        }
+        .app-section-title h2 strong {
+            left: 50%;
+        }
+        .col-lg-7 {
+            flex: 0 0 66.666667%;
+            max-width: 66.666667%;
+        }
+        .col-lg-5 {
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+        }
+        .app-wraper .container {
+            max-width: 1522px;
+        }
+        .app-section {
+            padding: 100px 0px 0px;
+            margin-top: 100px;
+            margin-bottom: 0;
+        }
+        .m-bottom {
+            margin-bottom: 140px !important;
+        }
+        .employee,
+        .employee-image {
+            height: 390px;
+        }
+        .productivity-bg .project-large,
+        .requirements .project-large {
+            padding-top: 50%;
+        }
+    }
+    
+    .app-title-about-management.app-add-responsive h2 strong {
+        left: 70%;
+    }
+    
+    @media (min-width:1900px) {
+        .app-section-title h2 strong {
+            left: 70% !important;
+        }
+        .exceptional__app h2 strong {
+            left: 57% !important;
+        }
+    }

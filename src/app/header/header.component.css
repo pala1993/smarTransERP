@@ -166,3 +166,17 @@ nav ul li a {
         font-size: 16px !important;
     }
 }
+
+@media(min-width:1400px) {
+    header.page-templete-body__OnScroll nav>.container>.menu>ul>li>a,
+    header nav>.container>.menu>ul>li>a {
+        font-size: 16px;
+    }
+}
+
+@media (min-width:1600px) {
+    header.page-templete-body__OnScroll nav>.container>.menu>ul>li>a,
+    header nav>.container>.menu>ul>li>a {
+        font-size: 18px;
+    }
+}

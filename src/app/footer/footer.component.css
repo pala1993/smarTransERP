@@ -113,7 +113,7 @@ textarea::placeholder {
 }
 
 .form {
-    padding-right: 150px;
+    padding-left: 150px;
 }
 
 .form input.form-control {
@@ -160,5 +160,14 @@ textarea::placeholder {
         font-weight: 900;
         margin: 0 0 30px;
         width: 100%;
+    }
+    footer .container {
+        margin: 0 60px;
+    }
+}
+
+@media(min-width:1600px) {
+    footer .container {
+        margin: 0 auto;
     }
 }

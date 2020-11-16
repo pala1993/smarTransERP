@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { NgwWowService } from 'ngx-wow';
 // import { Project, Path, Raster, view, Group, Point } from 'paper';
 // import * as paper from 'paper';
@@ -38,7 +38,8 @@ export class HomeComponent implements OnInit {
   subHeading:string;
   subHeading_2:string;
   solutionText:any;
-  text:string;
+  text: string;
+  public innerWidth: any;
   constructor(private wowSubscription: NgwWowService) {
     // this.count = 0;
     this.setImgUrl(0);
@@ -74,7 +75,10 @@ export class HomeComponent implements OnInit {
    
     this.setImgUrl(0);
   }
-
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.innerWidth = window.innerWidth;    
+  }
   reset() {
     this.wowSubscription.init()
   }

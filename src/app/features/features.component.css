@@ -142,11 +142,12 @@
 
 .app-about-us-section .app-about-text h3 span {
     font-size: 70px;
-    color: #7d7d7d;
+    color: #fff;
     display: block;
     margin: 0px 0 0 0px;
     position: relative;
     z-index: -1;
+    background-color: #5c4187;
 }
 
 .app-about-text-title {
@@ -354,21 +355,13 @@
 }
 
 .app-services__title h3 {
-    font-size: 36px;
-}
-
-.app-services__title h3:after {
     margin-top: 8px;
 }
 
-.app-services__title h3:after {
-    content: '';
-    width: 102px;
-    height: 16px;
+.app-services__title h3 {
     background: #5c4187;
-    border-radius: 8px;
-    display: block;
-    margin: 3px 0 15px;
+    color: #fff;
+    padding: 10px 15px;
 }
 
 .app-about__inner__text h1 {
@@ -442,12 +435,6 @@
     color: #7d7d7d;
 }
 
-@media (min-width: 1900px) {
-    .app-section-title h2 strong {
-        left: 43% !important;
-    }
-}
-
 @media (min-width: 1600px) {
     .app-wraper .container {
         max-width: 1522px;
@@ -519,7 +506,7 @@
         margin: 0 0 0 0px;
     }
     .app-section-title h2 span {
-        font-size: 126px;
+        font-size: 95px;
     }
     .app-section-title h2 strong {
         top: 2px
@@ -529,9 +516,173 @@
         height: 500px;
     }
     .app-section-title h2 strong {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
     .app-features-sec {
         padding-top: 105px !important;
+    }
+    .img-fluid,
+    .solution {
+        height: 100%;
+    }
+    .heading__app-section {
+        padding-top: 90px !important;
+        margin-bottom: 90px;
+    }
+    .app-services {
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (min-width:1100px) and (max-width:1200px) {
+    .app-services__title h3 {
+        font-size: 1.3rem;
+    }
+    .app-section-title h2 strong {
+        font-size: 1.2em;
+    }
+    .app-title-about-management h2 strong {
+        left: 60%;
+    }
+    .app-title-feature h2 strong {
+        left: 40%;
+    }
+    .about__inner h1 {
+        font-size: 3rem;
+    }
+    .app-about-us-section .app-about-text h3 {
+        font-size: 25px !important;
+    }
+    .app-about-us-section .app-about-text h3 span {
+        font-size: 30px !important;
+        padding: 10px 15px;
+    }
+    .mobile_app_development.app-solution__inner {
+        padding: 9px 10px 36px 50px;
+    }
+}
+
+@media (min-width:1200px) {
+    .app-banner_title,
+    .app-about__inner__text h1 {
+        font-size: 3rem;
+        line-height: 150%;
+    }
+    .app-services__title h3 {
+        font-size: 1.3rem;
+    }
+    .app-title-about-management h2 strong {
+        left: 58%;
+    }
+    .app-title-feature h2 strong {
+        left: 38%;
+    }
+    .app-features-sec {
+        padding-top: 0 !important;
+    }
+}
+
+@media(min-width:1400px) {
+    .app-about-us-section .app-about-text h3 {
+        font-size: 30px;
+    }
+    .app-about-us-section .app-about-text h3 span {
+        font-size: 40px;
+        padding: 15px 15px;
+    }
+    .app-section-title h2 span {
+        font-size: 115px;
+    }
+    .app-section-title h2 strong {
+        left: 40%;
+        font-size: 1.4em;
+    }
+    .app-section {
+        margin: 0 0 100px;
+        padding-top: 50px !important;
+    }
+    .app-solution__wrapper h2 {
+        font-size: 1.4rem;
+    }
+    .app-solution__wrapper .title {
+        font-size: 1.2rem;
+    }
+    .app-services__title h3 {
+        font-size: 1em;
+    }
+    .app-title-about-management h2 strong {
+        left: 60%;
+    }
+    .app-title-feature h2 strong {
+        left: 38%;
+    }
+    .app-features-sec {
+        padding-top: 0 !important;
+    }
+}
+
+@media (min-width:1600px) {
+    .app-about-us-section .app-about-text h3 {
+        font-size: 30px;
+    }
+    .app-about-us-section .app-about-text h3 span {
+        font-size: 40px;
+        padding: 15px 15px;
+    }
+    .app-features-sec {
+        padding-top: 100px !important;
+    }
+    .app-section-title h2 strong {
+        left: 35%;
+    }
+    .app-banner_title,
+    .app-about__inner__text h1 {
+        font-size: 4.5rem !important;
+    }
+    .app-section {
+        margin: 0 0 140px;
+        padding-top: 40px !important;
+    }
+    .app-section-title h2 span {
+        font-size: 126px;
+    }
+    .app-section-title h2 strong {
+        left: 66%;
+        font-size: 1.5em;
+    }
+    .app-title-feature h2 strong {
+        left: 50%;
+    }
+    .app-services__title h3 {
+        font-size: 1.5rem;
+    }
+    .app-solution__wrapper .title {
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width:1900px) {
+    .app-about-us-section .app-about-text h3 {
+        font-size: 40px;
+    }
+    .app-about-us-section .app-about-text h3 span {
+        font-size: 60px;
+        padding: 15px 15px;
+    }
+    .app-features-sec {
+        padding-top: 100px !important;
+    }
+    .app-title-feature.app-section-title h2 strong {
+        left: 56% !important;
+    }
+    .app-title-about-management.app-section-title h2 strong {
+        left: 70%;
+    }
+    .app-features-sec {
+        margin: 0 0 120px;
+        padding-top: 0px !important;
+    }
+    .app-services {
+        margin: 0 0 20px !important;
     }
 }
