@@ -6,7 +6,10 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  faBars=faBars;
+  faBars = faBars;
+
+ 
+ 
   constructor() { }
 
   ngOnInit(): void {

@@ -1,5 +1,5 @@
 .app-about__page__hero.about__inner {
-    min-height: 900px;
+    height: 100vh;
 }
 
 .about__inner {
@@ -20,8 +20,12 @@
     left: 0;
     top: 0;
     z-index: 2;
-    opacity: 0.8;
+    opacity: 0;
     background: #FFF;
+}
+
+.app-about-us-section {
+    margin-top: 150px !important;
 }
 
 .about__inner .app-about__text {
@@ -33,7 +37,7 @@
 }
 
 .about__inner h1 {
-    font-size: 6rem;
+    font-size: 56px;
     margin: 0 0 15px;
     /* font-weight: 900; */
     color: #5c4187;
@@ -135,13 +139,13 @@
 }
 
 .app-about-us-section .app-about-text h3 {
-    font-size: 60px;
+    font-size: 30pt;
     font-weight: 900;
     margin: 0 0 30px;
 }
 
 .app-about-us-section .app-about-text h3 span {
-    font-size: 70px;
+    /* font-size: 70px; */
     color: #fff;
     display: block;
     margin: 0px 0 0 0px;
@@ -186,7 +190,7 @@
 }
 
 .app-section {
-    margin: 0 0 140px;
+    margin: 100px 0 140px;
     z-index: 3;
     position: relative;
 }
@@ -216,7 +220,8 @@
 
 .app-section-title h2 strong {
     position: absolute;
-    left: 68%;
+    /* left: 68%; */
+    right: 0;
     font-size: 2em;
     top: -20px;
 }
@@ -243,6 +248,13 @@
     border-radius: 50%;
 }
 
+.app-about__page__hero {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-image: url("../../assets/images/about_feature_banner.jpg");
+}
+
 .app-about-image {
     position: absolute;
     right: -193px;
@@ -253,6 +265,7 @@
 .app-about-image img {
     height: 500px;
     width: 850px;
+    /* object-fit: contain; */
 }
 
 .pos {
@@ -462,9 +475,6 @@
     .mobile_app_development.app-solution__inner {
         padding: 9px 10px 34px 30px;
     }
-    .about__inner h1 {
-        font-size: 4rem;
-    }
     .app-about-shape {
         width: 350px;
         height: 310px;
@@ -489,15 +499,12 @@
         margin-bottom: 5px;
         font-size: 16px !important;
     }
-    .app-about__page__hero.about__inner {
-        min-height: 500px;
-    }
     .app-smarTrans__icon li {
         font-size: 16px;
     }
-    .app-title-about-management h2 strong {
+    /* .app-title-about-management h2 strong {
         left: 37%;
-    }
+    } */
     .app-about-us-section .app-about-text h3 {
         font-size: 30px !important;
     }
@@ -525,12 +532,33 @@
     .solution {
         height: 100%;
     }
-    .heading__app-section {
+    /* .heading__app-section {
         padding-top: 90px !important;
         margin-bottom: 90px;
-    }
+    } */
     .app-services {
         margin-bottom: 16px;
+    }
+}
+
+@media(min-width:1024px) and (max-width:1099px) {
+    .app-about-us-section .app-about-text h3 {
+        font-size: 25px !important;
+    }
+    .app-about-us-section .app-about-text h3 span {
+        font-size: 30px !important;
+    }
+    .app-services__title h3 {
+        font-size: 1.2rem;
+    }
+    .app-title-about-management h2 strong {
+        left: 50%;
+    }
+    .app-title-feature h2 strong {
+        left: 22%;
+    }
+    .app-about__text .container {
+        max-width: 960px;
     }
 }
 
@@ -546,9 +574,6 @@
     }
     .app-title-feature h2 strong {
         left: 40%;
-    }
-    .about__inner h1 {
-        font-size: 3rem;
     }
     .app-about-us-section .app-about-text h3 {
         font-size: 25px !important;
@@ -571,23 +596,29 @@
     .app-services__title h3 {
         font-size: 1.3rem;
     }
-    .app-title-about-management h2 strong {
+    /* .app-title-about-management h2 strong {
         left: 58%;
-    }
-    .app-title-feature h2 strong {
+    } */
+    /* .app-title-feature h2 strong {
         left: 38%;
-    }
+    } */
     .app-features-sec {
         padding-top: 0 !important;
     }
+    .app-about-padding {
+        margin-bottom: 0;
+    }
+    /* .app-about-us-section {
+        margin-bottom: 6rem;
+    } */
 }
 
 @media(min-width:1400px) {
-    .app-about-us-section .app-about-text h3 {
+    /* .app-about-us-section .app-about-text h3 {
         font-size: 30px;
-    }
+    } */
     .app-about-us-section .app-about-text h3 span {
-        font-size: 40px;
+        /* font-size: 40px; */
         padding: 15px 15px;
     }
     .app-section-title h2 span {
@@ -622,11 +653,11 @@
 }
 
 @media (min-width:1600px) {
-    .app-about-us-section .app-about-text h3 {
+    /* .app-about-us-section .app-about-text h3 {
         font-size: 30px;
-    }
+    } */
     .app-about-us-section .app-about-text h3 span {
-        font-size: 40px;
+        /* font-size: 40px; */
         padding: 15px 15px;
     }
     .app-features-sec {
@@ -634,10 +665,6 @@
     }
     .app-section-title h2 strong {
         left: 35%;
-    }
-    .app-banner_title,
-    .app-about__inner__text h1 {
-        font-size: 4.5rem !important;
     }
     .app-section {
         margin: 0 0 140px;
@@ -659,14 +686,22 @@
     .app-solution__wrapper .title {
         font-size: 1.6rem;
     }
+    .app-about-padding {
+        margin-bottom: 0;
+    }
+    .app-banner_title,
+    .app-about__inner__text h1 {
+        font-size: 45px;
+        line-height: 150%;
+    }
 }
 
 @media (min-width:1900px) {
-    .app-about-us-section .app-about-text h3 {
+    /* .app-about-us-section .app-about-text h3 {
         font-size: 40px;
-    }
+    } */
     .app-about-us-section .app-about-text h3 span {
-        font-size: 60px;
+        /* font-size: 60px; */
         padding: 15px 15px;
     }
     .app-features-sec {
@@ -684,5 +719,16 @@
     }
     .app-services {
         margin: 0 0 20px !important;
+    }
+    .app-banner_title,
+    .app-about__inner__text h1 {
+        font-size: 56px;
+        line-height: 150%;
+    }
+}
+
+@media(min-width:1920px) {
+    .app-about-image {
+        right: 0;
     }
 }

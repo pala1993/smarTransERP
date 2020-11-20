@@ -22,7 +22,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     HomeComponent,
     AboutUsComponent,
     FeaturesComponent,
-    ContactUsComponent,
+    ContactUsComponent
   
   ],
   imports: [
@@ -32,7 +32,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     NgwWowModule,
     FontAwesomeModule,
     FormsModule,
-    ReactiveFormsModule 
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

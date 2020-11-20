@@ -1,14 +1,16 @@
 <footer>
-    <div class="container">
+    <div class="container app-main__containerpanel">
         <div class="row">
             <div class="app-footer-main w-100 pb-5">
+                <div [ngClass]="{'show-scrollTop': windowScrolled}">
+                    <div class="footer-top-arrow" (click)="scrollToTop()"></div>
+                </div>
 
-                <div class="footer-top-arrow"></div>
                 <div class="row">
                     <div class="col-12 col-md-5 col-lg-4">
                         <div class="app-footer-content">
                             <h3>
-                                For more productivity , Please contact US
+                                for more details, reach us at
                             </h3>
                             <p>
                                 <strong>smarTrans ERP</strong> &nbsp;
@@ -55,7 +57,7 @@
         <div class="row border-top">
             <div class="app-footer w-100">
                 <div id="footer-bottom">
-                    <div class="container clearfix">
+                    <div class="clearfix">
                         <div id="footer-info">Copyright © {{anio}} smarTrans ERP, All rights reserved.</div>
                         <div id="et-footer-nav">
                             <ul class="bottom-nav">

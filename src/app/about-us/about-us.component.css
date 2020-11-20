@@ -1,5 +1,5 @@
     .app-about__page__hero.about__inner {
-        min-height: 900px;
+        height: 100vh;
     }
     
     .about__inner {
@@ -20,7 +20,7 @@
         left: 0;
         top: 0;
         z-index: 2;
-        opacity: 0.8;
+        opacity: 0;
         background: #FFF;
     }
     
@@ -33,20 +33,31 @@
     }
     
     .about__inner h1 {
-        font-size: 4rem;
+        font-size: 56px;
         margin: 0 0 15px;
         color: #5c4187;
-        line-height: 96px;
+        line-height: 75px;
     }
     
     .app-about__page__hero .app-about__inner__text h1 span {
         position: relative;
     }
     
+    .app-about__page__hero {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        background-image: url("../../assets/images/about_feature_banner.jpg");
+    }
+    
+    .app-about-us-section {
+        margin-top: 150px !important;
+    }
+    
     .about__inner h2 {
         font-weight: 300;
         color: #7d7d7d;
-        font-size: 48px;
+        font-size: 25pt !important;
         margin: 0;
     }
     
@@ -65,6 +76,12 @@
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
+    }
+    
+    .app-services__title h3 {
+        letter-spacing: 2px;
+        line-height: 30px;
+        font-weight: 600;
     }
     
     .app-hero-arrow span {
@@ -139,13 +156,12 @@
     }
     
     .app-about-us-section .app-about-text h3 {
-        font-size: 60px;
+        font-size: 30pt;
         font-weight: 900;
         margin: 0 0 30px;
     }
     
     .app-about-us-section .app-about-text h3 span {
-        font-size: 70px;
         color: #fff;
         display: block;
         margin: 0px 0 0;
@@ -205,7 +221,7 @@
     
     .app-section-title h2 strong {
         position: absolute;
-        left: 68%;
+        right: 0;
         font-size: 2em;
         top: -20px;
     }
@@ -242,6 +258,7 @@
     .app-about-image img {
         height: 500px;
         width: 850px;
+        object-fit: contain;
     }
     
     .pos {
@@ -285,7 +302,10 @@
     }
     
     .employee-name h1 {
-        font-size: 30px;
+        font-size: 20pt;
+        letter-spacing: 2px;
+        line-height: 30px;
+        font-weight: 600;
     }
     
     .employee-name span {
@@ -355,18 +375,39 @@
     .app-services__title h3 {
         background-color: #5c4187;
         padding: 5px 15px;
+        font-size: 20pt;
+    }
+    
+    @media screen and (min-width:1024px) and (max-width:1099px) {
+        .app-about-us-section .app-about-text h3 {
+            font-size: 25px !important;
+        }
+        .app-about-us-section .app-about-text h3 span {
+            font-size: 30px !important;
+        }
+        .app-section-title h2 strong {
+            font-size: 1.2em !important;
+        }
+        .employee,
+        .employee-image {
+            height: 260px;
+        }
+        .employee:hover>.employee-image {
+            margin-top: -60px;
+        }
+        .employee:hover>.employee-details .employee-social-link ul li {
+            bottom: 160px;
+            left: -25px;
+        }
+        .app-about-padding {
+            margin-bottom: 0px;
+        }
+        .app-about__inner__text h1 {
+            font-size: 40px;
+        }
     }
     
     @media (max-width:1680px) {
-        .app-section-title h2 strong {
-            left: 57%;
-        }
-        .about__inner h1 {
-            font-size: 4rem;
-        }
-        .app-about__text .container {
-            max-width: 1400px;
-        }
         .about__inner h2 {
             font-size: 30px;
         }
@@ -374,7 +415,6 @@
     
     @media(max-width:1500px) {
         .about__inner h1 {
-            font-size: 3rem;
             line-height: 150%;
         }
         .app-about-us-section .app-about-text h3 {
@@ -395,9 +435,6 @@
         .app-about-image img {
             height: 360px;
         }
-        .app-section-title h2 strong {
-            left: 60% !important;
-        }
         .app-services__title h3 {
             font-size: 1em;
         }
@@ -413,15 +450,12 @@
         .app-section-title h2 strong {
             font-size: 1.5em;
         }
-        .app-about__page__hero.about__inner {
-            min-height: 500px;
+        .app-about__inner__text h1 {
+            font-size: 40px;
         }
     }
     
     @media(min-width:1200px) {
-        .app-about__text .container {
-            max-width: 1140px;
-        }
         .employee:hover>.employee-image {
             margin-top: -70px;
         }
@@ -438,9 +472,6 @@
         .app-about-padding {
             margin: 0 0 0px;
         }
-        .exceptional__app h2 strong {
-            left: 37% !important;
-        }
         .app-section-title h2 strong {
             font-size: 1.4em;
         }
@@ -452,12 +483,6 @@
         }
         .app-section-title h2 strong {
             font-size: 1.2em;
-        }
-        .app-title-about-management h2 strong {
-            left: 60%;
-        }
-        .exceptional__app h2 strong {
-            left: 40% !important;
         }
         .employee:hover>.employee-details .employee-social-link ul li {
             bottom: 200px;
@@ -482,21 +507,20 @@
         }
     }
     
-    @media screen and (min-width:1300px) and (max-width:1366px) {
-        .exceptional__app h2 strong {
-            left: 43% !important;
-        }
-    }
+    @media screen and (min-width:1300px) and (max-width:1366px) {}
+    
+    @media screen and (min-width:1366px) and (max-width:1400px) {}
     
     @media (min-width:1400px) {
-        .app-about__text .container {
+        /* .app-about__text .container {
             max-width: 1522px;
-        }
+        } */
         .employee:hover>.employee-image {
-            margin-top: -70px;
+            margin-top: -90px;
         }
         .employee:hover>.employee-details .employee-social-link ul li {
-            bottom: 150px;
+            bottom: 220px;
+            left: -20px;
         }
         .col-lg-7 {
             flex: 0 0 50%;
@@ -506,9 +530,9 @@
             flex: 0 0 50%;
             max-width: 50%;
         }
-        .app-section {
+        /* .app-section {
             margin: 80px 0 140px;
-        }
+        } */
         .app-section.m-bottom {
             margin: 10px 0 80px;
         }
@@ -517,21 +541,13 @@
         }
         .employee,
         .employee-image {
-            height: 360px;
+            height: 300px;
         }
     }
     
     @media (min-width:1600px) {
-        .app-about-us-section .app-about-text h3 {
-            font-size: 30px;
-        }
         .app-about-us-section .app-about-text h3 span {
-            font-size: 40px;
             padding: 15px 15px;
-        }
-        .app-banner_title,
-        .app-about__inner__text h1 {
-            font-size: 4.5rem !important;
         }
         .app-section-title h2 span {
             font-size: 120px;
@@ -540,7 +556,8 @@
             font-size: 1.5em;
         }
         .app-section-title h2 strong {
-            left: 50%;
+            right: 0;
+            text-align: right;
         }
         .col-lg-7 {
             flex: 0 0 66.666667%;
@@ -571,15 +588,14 @@
         }
     }
     
-    .app-title-about-management.app-add-responsive h2 strong {
-        left: 70%;
+    @media(min-width:1920px) {
+        .app-about-image {
+            right: 0;
+        }
+        .employee,
+        .employee-image {
+            height: 470px;
+        }
     }
     
-    @media (min-width:1900px) {
-        .app-section-title h2 strong {
-            left: 70% !important;
-        }
-        .exceptional__app h2 strong {
-            left: 57% !important;
-        }
-    }
+    @media (min-width:1900px) {}

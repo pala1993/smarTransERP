@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener,  ElementRef, ViewChild, AfterViewInit } from '@angular/core';
 import { NgwWowService } from 'ngx-wow';
 // import { Project, Path, Raster, view, Group, Point } from 'paper';
 // import * as paper from 'paper';
@@ -8,14 +8,16 @@ import { NgwWowService } from 'ngx-wow';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, AfterViewInit  {
   Ele: any;
   secondEle: any;
-
+  contentHeight: number;
+  @ViewChild('EleHeight') elementView: ElementRef;
+  EleHeight: number;
   images = [
     {
       "img": "../../assets/images/ritu.jpg",
-      "heading": "RITU Logistics",
+      "heading": "RITU LOGISTICS",
       "subHeading": "Problem:",
       "text": "RITU Group, one of the largest transportation groups in Rajasthan, did not have a technical platform for their business. They wanted a way out for all their operations at one place to serve their customers with more efficiency.",
       "subHeading_2":"smarTrans Solution:",
@@ -40,13 +42,18 @@ export class HomeComponent implements OnInit {
   solutionText:any;
   text: string;
   public innerWidth: any;
+  public innerHeight: any;
   constructor(private wowSubscription: NgwWowService) {
     // this.count = 0;
     this.setImgUrl(0);
 
   }
 
-
+  ngAfterViewInit() {
+    this.EleHeight = this.elementView.nativeElement.offsetHeight;
+    this.contentHeight = this.EleHeight;
+}
+  
   ngOnInit(): void {
     this.wowSubscription.init()
     this.Ele = document.querySelector(".menu__item").classList.add('active');
@@ -75,9 +82,10 @@ export class HomeComponent implements OnInit {
    
     this.setImgUrl(0);
   }
-  @HostListener('window:resize', ['$event'])
-  onResize(event) {
+  @HostListener('window:load', ['$event'])
+  onLoad(event) {
     this.innerWidth = window.innerWidth;    
+    this.innerHeight = window.innerHeight;
   }
   reset() {
     this.wowSubscription.init()
@@ -86,7 +94,6 @@ export class HomeComponent implements OnInit {
 
 
   menu_one() {
-
     (document.querySelector('.app-case-study-reveal') as HTMLElement).style.opacity = '0';
     (document.querySelector('.tab__images') as HTMLElement).style.opacity = '1';
     (document.querySelector('.tab__images') as HTMLElement).style.zIndex = '1';
@@ -105,19 +112,15 @@ export class HomeComponent implements OnInit {
     (document.querySelector(".tab__main_images") as HTMLElement).style.height = "100%";
     (document.querySelector(".tab__main_images") as HTMLElement).style.objectFit = "cover";
     (document.querySelector(".tab__main_images") as HTMLElement).style.objectPosition = ' center center';
-    (document.querySelector(".tab__main_images") as HTMLElement).style.transitionDelay = '300ms'
-
-  }
+    (document.querySelector(".tab__main_images") as HTMLElement).style.transitionDelay = '300ms'  }
   menu_two() {
     (document.querySelector('.app-case-study-reveal') as HTMLElement).style.opacity = '0';
     setTimeout(function () {
       (document.querySelector('.app-case-study-reveal') as HTMLElement).style.opacity = '1';
     }, 300);
     this.setImgUrl(1);
-
     this.Ele = document.querySelector(".menu__item").classList.remove('active');
     this.secondEle = document.querySelector(".menu_item_two").classList.add('active');
-
   }
   setImgUrl(count): void {
     this.currentImgUrl = this.images[count].img;
@@ -127,5 +130,6 @@ export class HomeComponent implements OnInit {
     this.subHeading_2 = this.images[count].subHeading_2;
     this.solutionText = this.images[count].solutionText;
   }
+
 
 }
